@@ -58,7 +58,7 @@ p {
     .flex-container {
         flex-flow: column wrap;
     }
-    [class*="flex-item"] {
+    [class*="flex-item"]:not(.flex-item-4) {
         width: 100%;
     }
     .flex-item-1 {
