@@ -227,36 +227,31 @@
         </div>
     </div>
     <script>
+        
+        console.log('Aukstis ' + document.querySelector('.navbar-component').offsetHeight + 'px');
+        // var windowWidth = document.documentElement.clientWidth;
+        // console.log('Ekrano plotis  ' + windowWidth + 'px');
 
-        //console.log('aukstis ' + document.querySelector('.navbar-component').offsetHeight);
-        //var windowWidth = document.documentElement.clientWidth;
-        //console.log('Ekrano plotis  ' + windowWidth);
-
-
-            
-            var windowWidth = document.documentElement.clientWidth;
-            if(windowWidth <= '786'){
-                //console.log('Mazas Ekranas negu 786');
-                document.querySelector('.main').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + "px";
+        var windowWidth = document.documentElement.clientWidth;
+            if(windowWidth <= '786') {
+                // console.log('Ekranas mazesnis nei 786');
+                document.querySelector('.main').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + 'px';
+                // console.log('navbar komponento aukstis' + document.querySelector('.navbar-component').offsetHeight + ' ');
             } else {
                 document.querySelector('.main').style.paddingTop = 0;
             }
-            //console.log('Ekrano plotis  ' + windowWidth)
-        
-
-
-
 
 
         window.addEventListener('resize', function() {
             var windowWidth = document.documentElement.clientWidth;
-            if(windowWidth <= '786'){
-                //console.log('Mazas Ekranas negu 786');
-                document.querySelector('.main').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + "px";
+            if(windowWidth <= '786') {
+                // console.log('Ekranas mazesnis nei 786');
+                document.querySelector('.main').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + 'px';
+                // console.log('navbar komponento aukstis' + document.querySelector('.navbar-component').offsetHeight + ' ');
             } else {
                 document.querySelector('.main').style.paddingTop = 0;
             }
-            //console.log('Ekrano plotis  ' + windowWidth)
+            //console.log('Ekrano plotis  ' + windowWidth + 'px');
         })
 
         document.querySelector('.onoff').onclick = function() {
@@ -310,4 +305,3 @@
     </script>
 </body>
 </html>
-
